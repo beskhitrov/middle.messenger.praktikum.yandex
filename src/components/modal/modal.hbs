@@ -1,0 +1,11 @@
+<div class="modal">
+    {{#if load-completed}}
+        <h2>Файл загружен</h2>
+        <p>file.jpg</p>
+    {{else}}
+        <h2>Загрузите файл</h2>
+        <a href="#">Выбрать файл на комьютере</a>
+        <p class="validation-message">{{validation-message}}</p>
+    {{/if}}
+    {{> Button title="Сохранить" className="button__color"}}
+</div>

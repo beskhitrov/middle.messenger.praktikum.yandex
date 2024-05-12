@@ -1,0 +1,45 @@
+$button-color: #C7C7C7
+
+.modal
+  border-radius: 16px
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  position: relative
+  width: 400px
+  min-height: 300px
+  background: #FFFFFF
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25)
+
+.modal a
+  text-decoration: none
+
+.validation-message
+  height: 1rem
+  color: red
+
+.avatar
+  width: 120px
+  height: 120px
+  background: $button-color
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: 0.1s
+
+.avatar i
+  font-size: 32px
+
+.settings #title
+  display: none
+
+.settings #icon:hover
+  display: none
+
+.settings #icon:hover + #title
+  display: block
+  color: white
+  text-align: center
+  font-weight: bolder
