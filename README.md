@@ -21,3 +21,7 @@ npm run dev
 ## Страницы проекта
 
 <a href="http://localhost:3000" page="settings">http://localhost:3000</a>
+
+## Netlify
+
+https://fanciful-sprinkles-5fef23.netlify.app
