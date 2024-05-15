@@ -4,18 +4,20 @@
 <div class="settings">
     {{> Avatar}}
     <h1>Иван</h1>
-    {{> InputSetting type="text" name="email" label="Почта" value="foo@bar.baz" }}
-    {{> InputSetting type="text" name="login" label="Логин" value="foobar" }}
-    {{> InputSetting type="text" name="first_name" label="Имя" value="Иван" }}
-    {{> InputSetting type="text" name="second_name" label="Фамилия" value="Иванов" }}
-    {{> InputSetting type="text" name="display_name" label="Имя в чате" value="Иван" }}
-    {{> InputSetting type="text" name="phone" label="Телефон" value="+7 (000) 000-00-00" }}
-    <div class="links">
-        {{> LinkSetting title="Изменить данные" page="change-profile" className="location" }}
-        {{> LinkSetting title="Изменить пароль" page="change-password" className="location" }}
-        {{> LinkSetting title="Выйти" page="login" className="logout" }}
-    </div>
-    {{> Button title="Сохранить" className="button__color"}}
+    <form action="">
+        {{> InputSetting type="text" name="email" label="Почта" value="foo@bar.baz" }}
+        {{> InputSetting type="text" name="login" label="Логин" value="foobar" }}
+        {{> InputSetting type="text" name="first_name" label="Имя" value="Иван" }}
+        {{> InputSetting type="text" name="second_name" label="Фамилия" value="Иванов" }}
+        {{> InputSetting type="text" name="display_name" label="Имя в чате" value="Иван" }}
+        {{> InputSetting type="text" name="phone" label="Телефон" value="+7 (000) 000-00-00" }}
+        <div class="links">
+            {{> LinkSetting title="Изменить данные" page="change-profile" className="location" }}
+            {{> LinkSetting title="Изменить пароль" page="change-password" className="location" }}
+            {{> LinkSetting title="Выйти" page="login" className="logout" }}
+        </div>
+        {{> Button title="Сохранить" className="button__color"}}
+    </form>
 </div>
 <div class="modal-background">
     {{> Modal }}
