@@ -4,7 +4,8 @@
         <p>file.jpg</p>
     {{else}}
         <h2>Загрузите файл</h2>
-        <a href="#">Выбрать файл на комьютере</a>
+        <label for="avatar">Выбрать файл на компьютере</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
         <p class="validation-message">{{validation-message}}</p>
     {{/if}}
     {{> Button title="Сохранить" className="button__color"}}
