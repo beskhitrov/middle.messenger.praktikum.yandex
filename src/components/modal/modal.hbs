@@ -1,0 +1,15 @@
+<div class="modal">
+    {{#if load-completed}}
+        <h2>Файл загружен</h2>
+        <p>file.jpg</p>
+        {{> Button title="Сохранить" className="button__color"}}
+    {{else}}
+        <h2>Загрузите файл</h2>
+        <form action="">
+            <label for="avatar">Выбрать файл на компьютере</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            <p class="validation-message">{{validation-message}}</p>
+            {{> Button title="Сохранить" className="button__color"}}
+        </form>
+    {{/if}}
+</div>

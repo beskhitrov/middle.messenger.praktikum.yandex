@@ -1,0 +1,66 @@
+$font-family: 'Inter', sans-serif
+$font-weight-extra-light: 200
+
+$button-color: #C7C7C7
+$link-color: #FFFFFF
+$background-color: #FFFFFF
+$foreground-color: #000000
+$alert-color: #FF0000
+$info-color: #0000FF
+$half-tone-color: rgba(0, 0, 0, 0.5)
+$quoter-tone-color: rgba(0, 0, 0, 0.25)
+
+body
+  font-family: $font-family
+  overflow: hidden
+  margin: 0
+
+#app
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+li
+  list-style-type: none
+
+.card
+  border-radius: 16px
+  display: flex
+  flex-direction: column
+  position: relative
+  width: 480px
+  min-height: 512px
+  background: $background-color
+  box-shadow: 0px 0px 8px $quoter-tone-color
+
+.input
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-family: $font-family
+  font-weight: $font-weight-extra-light
+  position: relative
+
+.input__title
+  width: 360px
+  height: 16px
+  font-size: 14px
+  margin-bottom: 2px
+
+.input__field
+  width: 360px
+  height: 32px
+  font-size: 16px
+  border: none
+  border-bottom: 1px solid $foreground-color
+
+.input__error
+  width: 360px
+  height: 16px
+  font-size: 14px
+  color: $alert-color
+  margin-top: 2px
+
+.buttons
+  margin-top: 1rem

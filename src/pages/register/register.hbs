@@ -1,0 +1,16 @@
+<div class="card">
+    {{> Header title="Регистрация"}}
+    <form action="">
+        {{> InputText name="email" title="E-mail" placeholder="E-mail"}}
+        {{> InputText name="login" title="Логин" placeholder="Логин"}}
+        {{> InputText name="first_name" title="Имя" placeholder="Имя"}}
+        {{> InputText name="second_name" title="Фамилия" placeholder="Фамилия"}}
+        {{> InputText name="phone" title="Телефон" placeholder="Телефон"}}
+        {{> InputPassword name="password" title="Пароль"}}
+        {{> InputPassword name="password_check" title="Пароль (еще раз)"}}
+        {{> Button title="Зарегистрироваться" className="button__color"}}
+    </form>
+    <div class="buttons">
+        {{> Button title="Войти"}}
+    </div>
+</div>
