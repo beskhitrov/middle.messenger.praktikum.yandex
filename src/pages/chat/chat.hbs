@@ -1,5 +1,20 @@
-<div class="chat">
-    <h1><span>Страница-заглушка</span></h1>
-    <h2>{{message}}</h2>
-    <a href="#" page="login">Назад к авторизации</a>
+<!--<div class="chat">-->
+<!--    <h1><span>Страница-заглушка</span></h1>-->
+<!--    <h2>{{message}}</h2>-->
+<!--    <a href="#" page="login">Назад к авторизации</a>-->
+<!--</div>-->
+<div class="chat-list">
+    <div class="chat-list-header">
+        <a href="#" page="change-profile">Профиль &gt;</a>
+        <div>
+            {{> InputSearch name="login" placeholder="Логин"}}
+        </div>
+    </div>
+    <div class="chat-list-content">
+        {{> ChatLink chat-name="Чат3" chat-text="Текст сообщения" date="Пт" count="1"}}
+        {{> ChatLink chat-name="Чат1" chat-text="Текст сообщения" date="01.07.2024"}}
+    </div>
+</div>
+<div class="chat-window">
+    <p>Выберите чат, чтобы отправить сообщение</p>
 </div>
