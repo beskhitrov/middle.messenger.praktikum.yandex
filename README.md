@@ -1,3 +1,5 @@
+<img src="https://code.s3.yandex.net/MiddleFrontend/demo_1_convinient_time.svg">
+
 # 💬 Веб-приложение «Чат»
 
 🌐 https://fanciful-sprinkles-5fef23.netlify.app

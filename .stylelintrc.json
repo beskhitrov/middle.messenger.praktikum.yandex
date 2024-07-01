@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-declaration-strict-value",
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-selector-bem-pattern"
+  ],
+  "customSyntax": "postcss-sass",
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": ["consecutive-duplicates-with-different-values"]
+      }
+    ],
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    },
+    "selector-class-pattern": null
+  }
+}
