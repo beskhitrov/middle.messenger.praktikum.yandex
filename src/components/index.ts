@@ -9,3 +9,5 @@ export { LinkSetting } from './link-setting';
 export { Modal } from './modal';
 export { ChatLink } from './chat-link';
 export { InputSearch } from './input-search';
+import Bar from './bar';
+export { Bar };

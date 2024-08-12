@@ -6,3 +6,5 @@ export { SettingsPage } from './settings';
 export { ChangeAvatarPage } from './change-avatar';
 export { ChangePasswordPage } from './change-password';
 export { ChangeProfilePage } from './change-profile';
+
+export { default as Foo } from './foo';
